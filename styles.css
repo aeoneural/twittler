@@ -7,3 +7,54 @@ body {
     font-weight: 900;
     letter-spacing: 3px;
 }
+
+
+/*  button jquery  */
+.refresh-button {
+    background-color: #f6f1f1;
+    border: none;
+    border-radius: 5px;
+    color: black;
+    padding: 10px 20px;
+    text-decoration: none;
+    text-transform: lowercase;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: all .15s ease-in-out;
+}
+
+.highlight{ 
+    background-color: #bfbcbc;
+    
+ }
+
+
+ /* tweet jquery*/
+ .tweet-display {
+    margin-top: 30px;
+}
+
+.tweet-display .tweet {
+    line-height: 18px;
+}
+
+.tweet-display .user {
+    font-size: 12px;
+    font-weight: bold;
+    color: #e55b77;
+}
+
+.tweet-display .tweet .message {
+    font-size: 15px;
+}
+
+.footer{ 
+    font-size: 15px;
+    color: grey;
+ }
+
+
+
+
