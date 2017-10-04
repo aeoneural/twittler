@@ -27,7 +27,13 @@ var displayTweets = function(tweets) {
 
 // refresh tweet button, it's modified code of original stream
 var refreshTweet = function() {
+  $('.refresh-button').text('refresh tweet')
     displayTweets(streams.home);
+  };
+
+var displayUserTweets = function(user) {
+    $('.refresh-button').text('back to feed');
+    displayTweets(streams.users[user]);    
   };
 
 $(document).ready(function(){
@@ -39,11 +45,28 @@ $(document).ready(function(){
   	$('.refresh-button').on('mouseleave', function(){ 
     	$(this).removeClass('highlight');
  	})
- 	$('.user')
+
+
 
 
   refreshTweet();
 
   $('.refresh-button').on('click', refreshTweet);
+
+  //highlights the user, but it's not working when refreshed
+  $('.tweet-display').find('.user').on('mouseenter', function(){ 
+    $(this).css({'color': 'yellow'})
+  })
+  $('.tweet-display').find('.user').on('mouseleave', function(){ 
+    $(this).css({'color': ' #e55b77'})
+  })
+ 
+  
+  $('.tweet-display').on('click', '.tweet .user', function(event) {
+
+    var user = $(this).text().slice(1);
+
+    displayUserTweets(user);
+  });
  
 });
