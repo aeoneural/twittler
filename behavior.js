@@ -17,7 +17,7 @@ var displayTweets = function(tweets) {
       
       //used timeage timeago jquery plugin for user friendly timestamp
       var $timestamp = $('<div class="timestamp"></div>');
-      $timestamp.text($(.timeago(tweet.created_at));
+      $timestamp.text($.timeago(tweet.created_at));
       $timestamp.appendTo($tweetDisplay);
       index -= 1;
       maxTweet++
