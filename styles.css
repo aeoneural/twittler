@@ -15,7 +15,7 @@ body {
     border: none;
     border-radius: 5px;
     color: black;
-    padding: 10px 20px;
+    padding: 10px 30px;
     text-decoration: none;
     text-transform: lowercase;
     display: inline-block;
@@ -23,6 +23,8 @@ body {
     cursor: pointer;
     margin-top: 10px;
     transition: all .15s ease-in-out;
+    margin-top: 35px;
+    margin-bottom: 20px ;
 }
 
 .highlight{ 
@@ -30,14 +32,17 @@ body {
     
  }
 
-
  /* tweet jquery*/
- .tweet-display {
-    margin-top: 30px;
+ .tweet-display {   
+    text-align: left;
+    padding-left: 400px;
+
 }
 
 .tweet-display .tweet {
-    line-height: 18px;
+/*    align-content: left;
+*/    line-height: 18px;
+
 }
 
 .tweet-display .user {
